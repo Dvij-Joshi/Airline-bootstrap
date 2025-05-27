@@ -1,0 +1,39 @@
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Configuration files with sensitive information
+includes/db.php
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~
+
+# Log files
+*.log
+logs/
+
+# Dependency directories
+vendor/
+node_modules/
+
+# User uploaded content
+uploads/user_photos/*
+!uploads/user_photos/.gitkeep
+
+# Cache and session files
+/cache/
+/sessions/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

@@ -1,0 +1,287 @@
+/* Dashboard specific styles */
+.user-sidebar {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    border: none;
+}
+
+.user-sidebar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.user-avatar {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--primary-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.user-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.default-avatar i {
+    font-size: 60px;
+    color: var(--primary-color);
+}
+
+.list-group-item {
+    border: none;
+    padding: 12px 20px;
+    transition: var(--transition);
+}
+
+.list-group-item:hover {
+    background-color: rgba(0, 119, 192, 0.05);
+}
+
+.list-group-item.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.list-group-item.active i {
+    color: white;
+}
+
+.list-group-item i {
+    width: 24px;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.dashboard-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    border: none;
+    height: 100%;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-card .card-body {
+    padding: 25px;
+    text-align: center;
+}
+
+.dashboard-card i {
+    font-size: 48px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    transition: var(--transition);
+}
+
+.dashboard-card:hover i {
+    transform: scale(1.1);
+}
+
+.dashboard-card .card-title {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+
+.dashboard-card .btn {
+    border-radius: 30px;
+    padding: 8px 20px;
+    transition: var(--transition);
+}
+
+.dashboard-card .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 119, 192, 0.2);
+}
+
+.booking-table th {
+    font-weight: 500;
+    color: var(--dark-color);
+}
+
+.booking-table td {
+    vertical-align: middle;
+}
+
+.booking-badge {
+    border-radius: 30px;
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.booking-actions .btn {
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+
+.booking-actions .btn i {
+    margin-right: 5px;
+}
+
+.welcome-card {
+    background: linear-gradient(135deg, var(--primary-color), #005a93);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-card .card-body {
+    padding: 25px;
+}
+
+.welcome-card h4 {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.welcome-card p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+}
+
+.welcome-card .btn {
+    background-color: white;
+    color: var(--primary-color);
+    border: none;
+    border-radius: 30px;
+    padding: 8px 20px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.welcome-card .btn:hover {
+    background-color: var(--dark-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.recent-bookings-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border: none;
+}
+
+.recent-bookings-card .card-header {
+    background: linear-gradient(135deg, var(--primary-color), #005a93);
+    color: white;
+    border: none;
+    padding: 15px 20px;
+}
+
+.recent-bookings-card .card-header h5 {
+    color: white;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.recent-bookings-card .card-body {
+    padding: 25px;
+}
+
+.dashboard-stats {
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    text-align: center;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-light);
+}
+
+.stat-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    transition: var(--transition);
+}
+
+.stat-card:hover .stat-icon {
+    background-color: var(--primary-color);
+}
+
+.stat-icon i {
+    font-size: 24px;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.stat-card:hover .stat-icon i {
+    color: white;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    color: #6c757d;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Animation effects */
+.dashboard-card, .user-sidebar, .welcome-card, .recent-bookings-card, .stat-card {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.dashboard-card:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.dashboard-card:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

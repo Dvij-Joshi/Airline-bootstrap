@@ -1,0 +1,309 @@
+/* Confirmation Page Specific Styles */
+/* Using the global variables from style.css */
+
+/* Animation effects */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(40, 167, 69, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(40, 167, 69, 0);
+    }
+}
+
+/* Confirmation Container */
+.confirmation-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    text-align: center;
+    animation: fadeInUp 0.5s ease;
+}
+
+/* Success Message */
+.success-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #28a745;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: white;
+    font-size: 32px;
+    animation: pulse 2s infinite;
+}
+
+.success-message {
+    text-align: center;
+    margin-bottom: 30px;
+    animation: fadeInUp 0.5s ease-out;
+    animation-delay: 0.2s;
+}
+
+.success-message h2 {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.success-message p {
+    color: #6c757d;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Ticket Container */
+.ticket-container {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    transition: all 0.3s ease;
+    max-width: 800px;
+}
+
+.ticket-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.ticket-header {
+    background: linear-gradient(135deg, var(--primary-color), #005a93);
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.ticket-header h4 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.ticket-header small {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.ticket-body {
+    padding: 25px;
+    position: relative;
+}
+
+.ticket-body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: repeating-linear-gradient(90deg, #e0e0e0, #e0e0e0 5px, transparent 5px, transparent 12px);
+}
+
+.ticket-footer {
+    background-color: #f8f9fa;
+    padding: 15px 20px;
+    border-top: 1px dashed rgba(0, 0, 0, 0.1);
+    color: #6c757d;
+    font-size: 14px;
+}
+
+/* Flight Information */
+.flight-info {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+    position: relative;
+}
+
+.flight-route {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    position: relative;
+}
+
+.flight-route::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 70%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #dee2e6 20%, #dee2e6 80%, transparent);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.flight-point {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    padding: 0 15px;
+}
+
+.city {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--dark-color);
+    margin-bottom: 5px;
+}
+
+.airport {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.flight-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--primary-color);
+    font-size: 24px;
+    z-index: 2;
+    background-color: white;
+    padding: 0 10px;
+}
+
+/* Passenger Information */
+.passenger-info, .flight-details {
+    margin-top: 20px;
+}
+
+.info-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.info-label {
+    width: 150px;
+    font-weight: 500;
+    color: #6c757d;
+}
+
+.info-value {
+    flex-grow: 1;
+    font-weight: 500;
+}
+
+/* Barcode */
+.barcode {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.barcode img {
+    max-width: 80%;
+    height: 60px;
+}
+
+/* Logo */
+.airline-logo {
+    height: 40px;
+}
+
+/* Download Button */
+.download-btn {
+    background: linear-gradient(135deg, var(--primary-color), #005a93);
+    color: white !important;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.download-btn:hover {
+    background: linear-gradient(135deg, #005a93, var(--primary-color));
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 119, 192, 0.3);
+    color: white !important;
+    text-decoration: none;
+}
+
+.download-btn i {
+    margin-right: 10px;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    animation: fadeInUp 0.5s ease-out;
+    animation-delay: 0.4s;
+}
+
+.btn-home {
+    background-color: #f8f9fa;
+    color: var(--dark-color);
+    border-radius: 30px;
+    padding: 12px 25px;
+    font-weight: 500;
+    transition: var(--transition);
+    border: none;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-home i {
+    margin-right: 8px;
+}
+
+.btn-home:hover {
+    background-color: #e9ecef;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    color: var(--dark-color);
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background-color: white;
+    }
+    
+    .ticket-container {
+        box-shadow: none;
+        margin: 0;
+        border: 1px solid #dee2e6;
+    }
+    
+    .action-buttons, 
+    .success-message,
+    .navbar,
+    .footer {
+        display: none;
+    }
+}
