@@ -23,7 +23,6 @@ SkyWay Airlines is a comprehensive flight booking system that allows users to se
 - **Responsive Design**: Works on all devices (desktop, tablet, mobile)
 - **Form Validation**: Client-side and server-side validation for all forms
 - **Modern UI Components**: Progress indicators, animations, and interactive elements
-- **Email Notifications**: Booking confirmations sent via email
 
 ## Technical Details
 
@@ -34,36 +33,6 @@ SkyWay Airlines is a comprehensive flight booking system that allows users to se
 - **Icons**: Font Awesome
 - **Fonts**: Google Fonts (Poppins)
 
-### File Structure
-```
-AIRELINES/
-├── css/
-│   ├── style.css           # Main stylesheet
-│   ├── booking.css         # Booking page styles
-│   ├── payment.css         # Payment page styles
-│   ├── confirmation.css    # Confirmation page styles
-│   ├── ticket.css          # Ticket styles
-│   └── dashboard.css       # User dashboard styles
-├── js/
-│   └── script.js           # Main JavaScript file
-├── includes/
-│   ├── header.php          # Common header
-│   ├── footer.php          # Common footer
-│   └── db.php              # Database connection
-├── uploads/
-│   └── user_photos/        # User profile photos
-├── index.php               # Homepage
-├── login.php               # Login page
-├── register.php            # Registration page
-├── booking.php             # Booking page
-├── payment.php             # Payment page
-├── confirmation.php        # Confirmation page
-├── download_ticket.php     # Ticket download page
-├── ticket_pdf.php          # PDF ticket generator
-├── user_dashboard.php      # User dashboard
-├── search_results.php      # Flight search results
-└── logout.php              # Logout handler
-```
 
 ### Database Schema
 The system uses the following main tables:
@@ -115,12 +84,3 @@ Admin functionality is currently under development and will include:
 - Integration with third-party payment gateways
 - Advanced reporting and analytics
 
-## Contact Information
-For support or inquiries, please contact:
-- **Address**: 123 Airport Road, Vadodara, India
-- **Phone**: +91 9876543210
-- **Email**: info@skyway.com
-- **Hours**: Mon-Fri: 9:00 AM - 8:00 PM
-
-## License
-© 2025 SkyWay Airlines. All rights reserved.
